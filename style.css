@@ -1,38 +1,47 @@
+/* Apply styles to all elements to reset default margin, padding, and use the 'Satoshi' font */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Satoshi', sans-serif;
 }
 
+/* Apply styles to the entire body */
 body {
+  /* Hide both horizontal and vertical overflow */
   overflow-x: hidden;
   overflow-y: hidden;
+  /* Set the background color of the body */
   background-color: rgb(113, 218, 183);
 }
 
+/* Styles for the container displaying the name of the location */
 #name {
+  /* Position the container absolutely */
   position: absolute;
+  /* Set the background color, width, opacity, and border properties */
   background-color: rgb(255, 255, 255);
   width: fit-content;
   opacity: 0;
   border-radius: 5px;
   border: 3px solid rgb(245, 128, 128);
   padding: 0px 5px;
+  /* Set the font size */
   font-size: 1.5rem;
-
 }
 
-
-#timeCont{
+/* Styles for the container displaying the time of the location */
+#timeCont {
+  /* Set the background color, width, font size, padding, and border properties */
   background-color: white;
   width: fit-content;
   font-size: 1.5rem;
   padding: 5px 5px;
   border-radius: 5px;
-  border: 3px solid rgb(245, 128, 200);        
+  border: 3px solid rgb(245, 128, 200);
 }
 
-
+/* Styles for the paths within the SVG container */
 svg path {
+  /* Set cursor style to pointer for better user interaction */
   cursor: pointer;
 }
